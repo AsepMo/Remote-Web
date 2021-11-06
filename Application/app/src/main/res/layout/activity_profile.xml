@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	android:background="#ffffff"
+	android:id="@+id/root_view">
+
+	<android.support.v7.widget.CardView
+		android:id="@+id/cardview"
+		android:layout_width="fill_parent"
+		android:layout_height="0dp"
+		android:layout_weight="1"
+		app:cardCornerRadius="0dp"
+		app:cardElevation="8dp"
+		android:layout_marginLeft="16dp"
+		android:layout_marginRight="16dp"
+		android:layout_marginTop="16dp"
+		android:layout_marginBottom="16dp">
+
+		<RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:padding="11dp">
+
+			<ScrollView
+				android:layout_marginLeft="5dp"
+				android:layout_marginRight="5dp"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:scrollbars="none">
+
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:layout_above="@+id/profileButton"
+					android:orientation="vertical">
+
+					<com.ftp.client.engine.widget.CircleImageView
+						android:id="@+id/profileProfileImage"
+						android:layout_gravity="center_horizontal"
+						android:layout_width="40dp"
+						android:layout_height="40dp"
+						android:src="@drawable/user"
+						app:civ_border_width="2dp"
+						app:civ_border_color="@color/accent_grey"/>
+
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="PROFILE"
+						android:textSize="10sp"
+						android:textColor="@color/accent_grey"
+						android:textStyle="bold"
+						android:layout_marginTop="10dp"/>
+
+					<TextView
+						android:layout_width="match_parent"
+						android:layout_height="1dp"
+						android:background="@color/accent_grey"/>
+
+					<com.ftp.client.engine.widget.MaterialEditText
+						android:focusable="true"
+						android:focusableInTouchMode="true"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:hint="Name"
+						android:id="@+id/profileName"
+						android:singleLine="true"
+						android:inputType="textPersonName"
+						app:met_floatingLabel="normal"
+						app:met_iconPadding="0dp"
+						app:met_primaryColor="@color/accent_white"
+						app:met_floatingLabelTextColor="@color/accent_white"
+						android:layout_marginTop="5dp"/>
+
+					<com.ftp.client.engine.widget.MaterialEditText
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:hint="Email"
+						android:focusable="true"
+						android:focusableInTouchMode="true"
+						android:id="@+id/profileEmail"
+						android:singleLine="true"
+						android:inputType="textEmailAddress"
+						app:met_floatingLabel="normal"
+						app:met_iconPadding="0dp"
+						app:met_primaryColor="@color/accent_white"
+						app:met_clearButton="true"
+						app:met_floatingLabelTextColor="@color/accent_white"
+						android:layout_marginTop="5dp"/>
+
+					<com.ftp.client.engine.widget.MaterialEditText
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:hint="Password"
+						android:focusable="true"
+						android:focusableInTouchMode="true"
+						android:id="@+id/profilePassword"
+						android:singleLine="true"
+						android:inputType="textPassword"
+						app:met_floatingLabel="normal"
+						app:met_iconPadding="0dp"
+						app:met_primaryColor="@color/accent_white"
+						app:met_floatingLabelTextColor="@color/accent_white"
+						android:layout_marginTop="5dp"/>
+
+					<com.ftp.client.engine.widget.MaterialEditText
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:hint="Age"
+						android:singleLine="true"
+						android:inputType="number"
+						app:met_floatingLabel="normal"
+						app:met_iconPadding="0dp"
+						android:focusable="true"
+						android:focusableInTouchMode="true"
+						android:id="@+id/profileAge"
+						app:met_primaryColor="@color/accent_white"
+						app:met_clearButton="true"
+						app:met_floatingLabelTextColor="@color/accent_white"
+						android:layout_marginTop="5dp"/>
+
+					<LinearLayout
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:gravity="center_vertical"
+						android:weightSum="2"
+						android:foregroundGravity="center_horizontal"
+						android:orientation="horizontal"
+						android:layout_marginTop="5dp">
+
+						<TextView
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:padding="5dp"
+							android:text="Gender"
+							android:layout_weight="0.5"/>
+
+						<com.ftp.client.engine.widget.SwitchMultiButton
+							android:layout_weight="0.5"
+							android:id="@+id/profileGender"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_gravity="center_horizontal"
+							android:layout_marginTop="14dp"
+							android:paddingBottom="4dp"
+							android:paddingLeft="12dp"
+							android:paddingRight="12dp"
+							android:paddingTop="4dp"
+							app:selectedColor="@color/colorPrimaryDark"
+							app:strokeRadius="5dp"
+							app:strokeWidth="1dp"
+							app:textSize="14sp"
+							app:switchTabs="@array/switch_tabs_gender"/>
+
+					</LinearLayout>
+
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="Site Address"
+						android:textSize="10sp"
+						android:textColor="@color/accent_grey"
+						android:textStyle="bold"
+						android:layout_marginTop="15dp"/>
+
+					<TextView
+						android:layout_width="match_parent"
+						android:layout_height="1dp"
+						android:background="@color/accent_grey"/>
+
+					<com.ftp.client.engine.widget.MaterialEditText
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:hint="Site Address"
+						android:singleLine="true"
+						android:inputType="text"
+						app:met_floatingLabel="normal"
+						app:met_iconPadding="0dp"
+						android:focusable="true"
+						android:focusableInTouchMode="true"
+						android:id="@+id/profileSiteAddress"
+						app:met_primaryColor="@color/accent_white"
+						app:met_clearButton="true"
+						app:met_floatingLabelTextColor="@color/accent_white"
+						android:layout_marginTop="5dp"/>
+
+				</LinearLayout>
+
+			</ScrollView>
+
+		</RelativeLayout>
+
+	</android.support.v7.widget.CardView>
+
+	<android.support.v7.widget.Toolbar
+		android:id="@+id/toolbar"
+		android:layout_width="match_parent"
+		android:layout_height="?attr/actionBarSize"
+		android:elevation="10dp"
+		android:background="@color/colorPrimary"
+		app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+		app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+
+</LinearLayout>
+

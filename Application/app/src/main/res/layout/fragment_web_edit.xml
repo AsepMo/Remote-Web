@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_height="match_parent"
+	android:layout_width="match_parent"
+	android:background="@color/windowBackground">
+
+	<LinearLayout
+		android:layout_height="48dp"
+		android:layout_width="match_parent"
+		android:orientation="horizontal"
+		android:id="@+id/title_layout">
+
+		<TextView
+			android:layout_height="match_parent"
+			android:textAppearance="?android:attr/textAppearanceMedium"
+			android:layout_width="match_parent"
+			android:text="Website"
+			android:gravity="center"
+			android:textColor="#FF1A4ADB"/>
+
+	</LinearLayout>
+
+	<View
+		android:layout_height="2dp"
+		android:layout_width="match_parent"
+		android:layout_below="@id/title_layout"
+		android:id="@+id/line_separator_1"/>
+
+	<EditText
+		android:layout_height="wrap_content"
+		android:inputType="textPersonName"
+		android:layout_width="match_parent"
+		android:ems="10"
+		android:layout_below="@id/line_separator_1"
+		android:id="@+id/web_name"
+		android:hint="Web Name"
+		android:textColorHint="#FFABABAB"/>
+
+	<View
+		android:layout_height="2dp"
+		android:layout_width="match_parent"
+		android:layout_below="@id/web_name"
+		android:id="@+id/line_separator_2"/>
+
+	<LinearLayout
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:id="@+id/relative_layout_1"
+		android:layout_below="@id/line_separator_2">
+
+		<EditText
+			android:layout_height="wrap_content"
+			android:inputType="textPersonName"
+			android:layout_width="wrap_content"
+			android:ems="10"
+			android:id="@+id/server_ip"
+			android:hint="host"
+			android:textColorHint="#FFABABAB"
+			android:layout_weight="1.0"/>
+
+		<EditText
+			android:layout_height="wrap_content"
+			android:inputType="number"
+			android:layout_width="68dp"
+			android:ems="10"
+			android:hint="port"
+			android:id="@+id/server_port"
+			android:textColorHint="#FFABABAB"/>
+
+	</LinearLayout>
+
+	<View
+		android:layout_height="2dp"
+		android:layout_width="match_parent"
+		android:layout_below="@id/relative_layout_1"
+		android:id="@+id/line_separator_3"/>
+
+	<EditText
+		android:layout_height="wrap_content"
+		android:inputType="textPersonName"
+		android:layout_width="match_parent"
+		android:ems="10"
+		android:id="@+id/user"
+		android:layout_below="@id/line_separator_3"
+		android:hint="user"
+		android:textColorHint="#FFABABAB"/>
+
+	<View
+		android:layout_height="2dp"
+		android:layout_width="match_parent"
+		android:layout_below="@id/user"
+		android:id="@+id/line_separator_4"/>
+
+	<EditText
+		android:layout_height="wrap_content"
+		android:inputType="textPassword"
+		android:layout_width="match_parent"
+		android:ems="10"
+		android:layout_below="@id/line_separator_4"
+		android:hint="password"
+		android:id="@+id/server_password"
+		android:textColorHint="#FFABABAB"/>
+
+	<View
+		android:layout_height="2dp"
+		android:layout_width="match_parent"
+		android:layout_below="@id/server_password"
+		android:id="@+id/line_separator_5"/>
+
+	<EditText
+		android:layout_height="wrap_content"
+		android:inputType="textPersonName"
+		android:layout_width="match_parent"
+		android:ems="10"
+		android:layout_below="@id/line_separator_5"
+		android:id="@+id/server_destination"
+		android:hint="destination path"
+		android:textColorHint="#FFABABAB"/>
+
+	<View
+		android:layout_height="2dp"
+		android:layout_width="match_parent"
+		android:layout_below="@id/server_destination"
+		android:id="@+id/line_separator_6"/>
+
+	<EditText
+		android:layout_height="wrap_content"
+		android:inputType="textPersonName"
+		android:layout_width="match_parent"
+		android:ems="10"
+		android:layout_below="@id/line_separator_6"
+		android:hint="web Address"
+		android:id="@+id/web_address"
+		android:textColorHint="#FFABABAB"/>
+
+	<Button
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:text="+ Add"
+		android:layout_alignParentBottom="true"
+		android:id="@+id/btn_add"
+		android:layout_marginBottom="16dp"
+		android:background="#FF565ECA"
+		android:layout_marginStart="10dp"
+		android:layout_marginEnd="10dp"
+		android:elevation="10dp"/>
+
+</RelativeLayout>
+

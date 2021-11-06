@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorFolderPrimary">#3F51B5</color>
+    <color name="colorFolderPrimaryDark">#303F9F</color>
+    <color name="colorFolderAccent">#3F51B5</color>
+    <color name="textFolderPrimary">#FFFFFF</color>
+    <color name="textFolderSecondary">#FFFFFF</color>
+    <color name="colorFolderHeader">@color/colorFolderPrimary</color>
+</resources>

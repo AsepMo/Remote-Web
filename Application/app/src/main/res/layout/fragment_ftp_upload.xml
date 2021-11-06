@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_height="match_parent"
+	android:layout_width="match_parent"
+	android:background="@color/windowBackground"
+	android:id="@+id/root_view">
+
+	<LinearLayout
+		android:id="@+id/title_layout"
+		android:layout_height="48dp"
+		android:layout_width="match_parent"
+		android:orientation="horizontal"
+		android:background="@color/colorPrimary">
+
+		<TextView
+			android:layout_height="match_parent"
+			android:textAppearance="?android:attr/textAppearanceMedium"
+			android:layout_width="match_parent"
+			android:text="Upload"
+			android:gravity="center"
+			android:textColor="#FF1A4ADB"
+			android:shadowColor="#FF1F1F1F"
+			android:shadowDx="2.4"
+			android:shadowDy="2.4"
+			android:shadowRadius="2.4"
+			android:typeface="serif"
+			android:textStyle="bold"/>
+
+	</LinearLayout>
+
+	<View
+		android:layout_height="2dp"
+		android:layout_width="match_parent"
+		android:layout_below="@id/title_layout"
+		android:id="@+id/line_separator_1"
+		android:background="#FF4B62F0"/>
+
+	<LinearLayout
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:id="@+id/relative_layout_1"
+		android:layout_below="@id/line_separator_1">
+
+		<RelativeLayout
+			android:id="@+id/container"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:background="@color/windowBackground">
+
+			<LinearLayout
+				android:id="@+id/empty_layout"
+				android:layout_width="wrap_content"
+				android:layout_height="300dp"
+				android:layout_centerInParent="true"
+				android:orientation="vertical"
+				android:visibility="gone"
+				android:background="#FFFFFFFF"
+				android:layout_marginTop="25dp">
+
+				<ImageView
+					android:layout_width="130dp"
+					android:layout_height="130dp"
+					android:layout_marginBottom="16dp"
+					android:layout_marginEnd="70dp"
+					android:layout_marginStart="70dp"
+					android:layout_marginTop="16dp"
+					android:maxHeight="130dp"
+					android:maxWidth="130dp"
+					android:minHeight="130dp"
+					android:minWidth="130dp"
+					android:src="@drawable/ic_warning_log"/>
+
+				<TextView
+					android:layout_height="match_parent"
+					android:layout_width="match_parent"
+					android:text="Empty"
+					android:gravity="center"
+					android:layout_marginBottom="10dp"
+					android:textSize="34sp"
+					android:shadowColor="#FFED1212"
+					android:shadowDx="2.4"
+					android:shadowDy="2.4"
+					android:shadowRadius="2.4"
+					android:typeface="serif"
+					android:textStyle="bold"/>
+
+			</LinearLayout>
+
+			<com.ftp.client.engine.widget.EmptyRecyclerView
+				android:id="@+id/file_list_upload"
+				android:layout_width="fill_parent"
+				android:layout_height="fill_parent"
+				android:focusable="true"
+				android:focusableInTouchMode="true"
+				android:scrollbarAlwaysDrawHorizontalTrack="false"
+				android:scrollbarSize="20dp"
+				android:scrollbars="vertical"/>
+
+		</RelativeLayout>
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="68dp"
+		android:layout_alignParentBottom="true"
+		android:id="@+id/linearLayout"
+		android:gravity="center|center_horizontal"
+		android:orientation="horizontal"
+		android:background="@color/colorPrimary">
+
+		<com.ftp.client.engine.widget.FancyButton
+			android:id="@+id/btn_add"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="10dp"
+			android:gravity="right"
+			android:padding="10dp"
+			android:paddingLeft="20dp"
+			android:paddingRight="20dp"
+			app:fb_defaultColor="@color/md_blue_grey_600"
+			app:fb_focusColor="#9bd823"
+			app:fb_iconPosition="left"
+			app:fb_radius="30dp"
+			app:fb_text="Upload"
+			app:fb_textColor="#FFFFFF"
+			app:fb_iconPaddingRight="10dp"
+			android:layout_marginRight="10dp"/>
+
+		<com.ftp.client.engine.widget.FancyButton
+			android:id="@+id/btn_upload"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginRight="10dp"
+			android:gravity="right"
+			android:padding="10dp"
+			android:paddingLeft="20dp"
+			android:paddingRight="20dp"
+			app:fb_defaultColor="@color/md_blue_grey_600"
+			app:fb_focusColor="#9bd823"
+			app:fb_iconPosition="left"
+			app:fb_radius="30dp"
+			app:fb_text="Upload"
+			app:fb_textColor="#FFFFFF"
+			app:fb_iconPaddingRight="10dp"
+			android:layout_marginLeft="10dp"/>
+
+	</LinearLayout>
+
+</RelativeLayout>
+

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:id="@+id/cardview"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	app:cardBackgroundColor="@color/windowBackground"
+	app:cardCornerRadius="4dp"
+	app:cardElevation="10dp">
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+		android:gravity="center_vertical"
+		android:padding="16dp">
+
+		<ImageView
+			android:id="@+id/app_icon"
+			android:layout_width="@android:dimen/app_icon_size"
+			android:layout_height="@android:dimen/app_icon_size"
+			android:contentDescription="@null"
+			android:layout_marginRight="8dp"
+			android:layout_marginEnd="8dp"
+			android:src="@drawable/apk_v2"/>
+
+		<RelativeLayout
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_weight="1">
+
+			<TextView
+				android:id="@+id/connection_name"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:singleLine="true"
+				android:ellipsize="marquee"
+				android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+				android:textAlignment="viewStart"
+				android:text="Connection Name"
+				android:textColor="?android:attr/textColorPrimary"/>
+
+			<com.ftp.client.engine.widget.MarqueeTextView		
+				android:id="@+id/connection_user"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textAppearance="?android:attr/textAppearanceSmall"
+				android:text="user"
+				android:textColor="@color/colorPrimary"
+				android:layout_below="@+id/connection_name"
+				android:layout_alignParentLeft="true"
+				android:layout_alignParentStart="true"
+                app:scroll_first_delay="0"
+                app:scroll_interval="3000"
+                app:scroll_mode="mode_forever"/>
+            
+			<com.ftp.client.engine.widget.MarqueeTextView		
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textAppearance="?android:attr/textAppearanceSmall"
+				android:text="@string/connection_at"
+				android:id="@+id/connection_at"
+				android:textColor="@color/colorAccent"
+				android:layout_alignTop="@+id/connection_user"
+				android:layout_toRightOf="@+id/connection_user"
+				android:layout_toEndOf="@+id/connection_user"
+                app:scroll_first_delay="0"
+                app:scroll_interval="3000"
+                app:scroll_mode="mode_forever"/>
+            
+			<com.ftp.client.engine.widget.MarqueeTextView		
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textAppearance="?android:attr/textAppearanceSmall"
+				android:text="host"
+				android:id="@+id/connection_host"
+				android:textColor="@color/colorPrimary"
+				android:layout_below="@+id/connection_name"
+				android:layout_toRightOf="@+id/connection_at"
+				android:layout_toEndOf="@+id/connection_at"
+                app:scroll_first_delay="0"
+                app:scroll_interval="3000"
+                app:scroll_mode="mode_forever"/>
+            
+			<TextView
+				android:layout_height="wrap_content"
+				android:layout_width="match_parent"
+				android:text="http://www.situs.com"
+                android:textColor="@color/accent_green" 
+				android:layout_below="@id/connection_user"
+				android:id="@+id/situs_address"/>
+
+		</RelativeLayout>
+
+	</LinearLayout>
+
+</android.support.v7.widget.CardView>
+

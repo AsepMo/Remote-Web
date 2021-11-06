@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimaryDark">#37474F</color> <!-- [ BLUE GRAY - 800 ] -->
+    <color name="colorPrimary">#455A64</color> <!-- [ BLUE GRAY - 700 ] -->
+    <color name="colorPrimaryLight">#CFD8DC</color> <!-- [ BLUE GRAY - 100 ] -->
+    <color name="colorAccent">#263238</color> <!-- [ BLUE GRAY - 900 ] -->
+
+    <color name="textColorPrimary">#FFFFFF</color>
+    <color name="textColorSecondary">#B2B2B2</color>
+
+    <color name="text">#FFFFFF</color>
+    <color name="icons">#FFFFFF</color>
+    <color name="divider">#1E1E1E</color>
+    <color name="path_gradient">#263380</color>
+    
+    <color name="colorControlNormal">@color/textColorSecondary</color>
+    <color name="colorControlActivated">@color/colorAccent</color>
+    <color name="colorControlHighlight">@color/divider</color>
+
+    <!--
+    <color name="colorButtonNormal">#19C1B2</color>
+    <color name="colorSwitchThumbNormal">#19C1B2</color>
+    <color name="navigationBarColor">@color/colorPrimaryDark</color>
+    -->
+ 
+    <color name="windowBackground">#212121</color>
+    <color name="lightBackground">#E0E0E0</color>
+    <color name="darkBackground">#424242</color>
+    <color name="drawerBackground">#FFfafafa</color>
+    <color name="rowBackground">#34474F</color>
+    
+</resources>

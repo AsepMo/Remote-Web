@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="ld_activityScreenTitles">
+        <item>Website</item>
+        <item>Uploads</item>
+        <item>List</item>
+        <item>Download</item>
+        <item />
+        <item>Home</item>
+    </string-array>
+
+    <array name="ld_activityScreenIcons">
+        <item>@drawable/ic_web_site</item>
+        <item>@drawable/ic_ftp_upload</item>
+        <item>@drawable/ic_ftp_list</item>
+        <item>@drawable/ic_folder_download</item>
+        <item>0</item>
+        <item>@drawable/ic_home</item>
+    </array>
+
+    <string-array name="switch_tabs_gender">
+        <item>MALE</item>
+        <item>FEMALE</item>
+    </string-array>
+
+    <string-array name="switch_tabs_type_ftp">
+        <item>FTP</item>
+        <item>FTPS</item>
+    </string-array>
+</resources>

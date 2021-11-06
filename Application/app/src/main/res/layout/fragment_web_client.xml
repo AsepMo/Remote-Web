@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/container"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+
+	<LinearLayout
+		android:id="@+id/first_loading_view"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_centerInParent="true"
+		android:orientation="vertical"
+		android:visibility="visible">
+
+		<ImageView
+			android:layout_width="130dp"
+			android:layout_height="130dp"
+			android:layout_marginBottom="16dp"
+			android:layout_marginEnd="70dp"
+			android:layout_marginStart="70dp"
+			android:layout_marginTop="16dp"
+			android:maxHeight="130dp"
+			android:maxWidth="130dp"
+			android:minHeight="130dp"
+			android:minWidth="130dp"
+			android:src="@drawable/aweb_icon"/>
+
+		<ProgressBar
+			style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:indeterminate="true"/>
+
+	</LinearLayout>
+
+	<RelativeLayout
+		android:id="@+id/web_container"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:visibility="gone">
+
+		<android.support.v4.widget.SwipeRefreshLayout
+			android:id="@+id/refresh_layout"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent">
+
+			<com.ftp.client.engine.widget.AdvancedWebView
+				android:id="@+id/webview"
+				android:layout_width="fill_parent"
+				android:layout_height="fill_parent"
+				android:focusable="true"
+				android:focusableInTouchMode="true"
+				android:scrollbarAlwaysDrawHorizontalTrack="false"
+				android:scrollbarSize="20dp"
+				android:scrollbars="vertical"/>
+
+		</android.support.v4.widget.SwipeRefreshLayout>
+
+		<FrameLayout
+			android:id="@+id/main_progress_bar_container"
+			android:layout_width="match_parent"
+			android:layout_height="4dp"
+			android:layout_alignParentBottom="true"
+			android:background="#FFFFFF">
+
+			<ProgressBar
+				android:id="@+id/main_progress_bar"
+				style="?android:attr/progressBarStyleHorizontal"
+				android:layout_width="match_parent"
+				android:layout_height="100dp"
+				android:layout_gravity="center"
+				android:scaleY="4"/>
+
+		</FrameLayout>
+
+	</RelativeLayout>
+
+</RelativeLayout>
+
